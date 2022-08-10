@@ -24,7 +24,7 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const extractDarkTheme = JSON.parse(localStorage.getItem("isDarkTheme"));
-    setIsDarkTheme(extractDarkTheme !== null ?extractDarkTheme : false);
+    setIsDarkTheme(extractDarkTheme !== null ? extractDarkTheme : false);
   }, []);
 
   const handleToggleIcon = () => {
