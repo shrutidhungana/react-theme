@@ -1,9 +1,12 @@
 import React from 'react'
+import Index from './Components/Button/Index'
+import PageLayout from './Components/PageLayout/PageLayout'
 
 const App = () => {
   return (
     <div>
-      App
+      <Index />
+      <PageLayout />
     </div>
   )
 }
