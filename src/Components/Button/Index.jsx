@@ -5,7 +5,7 @@ import { ThemeContext } from '../../Context/ThemeContext'
 const Index = () => {
     const {handleToggleIcon, isDarkTheme} = useContext(ThemeContext)
   return (
-      <div>
+      <div className = "button-wrapper">
           {
               isDarkTheme? <BsSun size= {32} onClick={handleToggleIcon} /> : <BsSunFill size= {32}  onClick={handleToggleIcon} />
          }
