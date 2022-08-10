@@ -6,7 +6,9 @@ const Index = () => {
     const {handleToggleIcon, isDarkTheme} = useContext(ThemeContext)
   return (
       <div>
-          <button>Toggle theme</button>
+          {
+              isDarkTheme? <BsSun size= {32} onClick={handleToggleIcon} /> : <BsSunFill size= {32}  onClick={handleToggleIcon} />
+         }
       </div>
   )
 }
